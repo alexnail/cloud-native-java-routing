@@ -6,7 +6,7 @@
     <packaging>pom</packaging>
     <parent>
         <groupId>cnj</groupId>
-        <artifactId>root</artifactId>
+        <artifactId>parent</artifactId>
         <version>2.0.0-SNAPSHOT</version>
         <relativePath/>
     </parent>
@@ -23,7 +23,7 @@
             <plugin>
                 <groupId>org.jfrog.buildinfo</groupId>
                 <artifactId>artifactory-maven-plugin</artifactId>
-                <version>2.4.0</version>
+                <version>3.5.1</version>
                 <inherited>false</inherited>
                 <executions>
                     <execution>
@@ -59,40 +59,8 @@
             </plugin>
         </plugins>
     </build>
-    <repositories>
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>libs-release</name>
-            <url>https://cloudnativejava.artifactoryonline.com/cloudnativejava/libs-release</url>
-        </repository>
-        <repository>
-            <snapshots/>
-            <id>snapshots</id>
-            <name>libs-snapshot</name>
-            <url>https://cloudnativejava.artifactoryonline.com/cloudnativejava/libs-snapshot</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>plugins-release</name>
-            <url>https://cloudnativejava.artifactoryonline.com/cloudnativejava/plugins-release</url>
-        </pluginRepository>
-        <pluginRepository>
-            <snapshots/>
-            <id>snapshots</id>
-            <name>plugins-snapshot</name>
-            <url>https://cloudnativejava.artifactoryonline.com/cloudnativejava/plugins-snapshot
-            </url>
-        </pluginRepository>
-    </pluginRepositories>
-    <dependencyManagement>
+
+    <!--<dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>cnj</groupId>
@@ -102,6 +70,6 @@
                 <type>pom</type>
             </dependency>
         </dependencies>
-    </dependencyManagement>
+    </dependencyManagement>-->
 
 </project>
